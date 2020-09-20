@@ -2,25 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class determineSmoothv2 : MonoBehaviour
+public class determineSmoothV2 : MonoBehaviour
 {
     public Transform myTransform;
 
-    public float speed;
     public float x;
     public float y;
     public float z;
 
-    private float timer;
+    public float speed;
 
     void Start()
     {
-          myTranform.position = new Vector3(0, 0, 0);
+        myTransform.position = new Vector3(0, 0, 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        myTransform.position += new Vector3(x, y, z) * speed;
     }
 }
